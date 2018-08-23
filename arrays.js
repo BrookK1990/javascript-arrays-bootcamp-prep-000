@@ -10,5 +10,6 @@ return [element,...array]
 function destructivelyAddElementToBeginningOfArray(array,element) {
   var array = [1]
   var element = "foo"
-  return array.push(element)
+  var array[element] = element
+  return [array]
 }
